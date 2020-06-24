@@ -1,3 +1,3 @@
 # execrism.io
-My solutions to the exercism exercises
+My solutions to the exercism exercises.  
 **[Exercism](https://exercism.io/)**
