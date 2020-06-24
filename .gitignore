@@ -3,5 +3,11 @@ cli/
 .exercism/
 users/
 
+#editor
+.vscode
+
 #python
 __pycache__/
+
+#julia
+*.ipynb
