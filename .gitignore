@@ -1,0 +1,7 @@
+#exercism
+cli/
+.exercism/
+users/
+
+#python
+__pycache__/
