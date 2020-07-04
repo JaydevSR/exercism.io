@@ -11,12 +11,8 @@ function label(colors)
         "grey" => 8,
         "white" => 9)
 
-    value = 10^(codes[colors[3]] + 1) * codes[colors[1]] + 10^(codes[colors[3]]) * codes[colors[2]]
-    if value % 1000 == 0
-        return "$(Int(value/1000)) kiloohms"
-    else
-        return "$value ohms"
-    end
+    value = (10 * codes[colors[1]] + codes[colors[2]]) * 10^codes[colors[3]]
+    return value % 1000 == 0 ? "$(div(value, 1000)) kiloohms" : "$value ohms"
 end
 
 
